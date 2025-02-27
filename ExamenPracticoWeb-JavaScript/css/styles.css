@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #302c76;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 18vh;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 100;
+}
+  
+header.visible {
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    height: 100%; 
+    margin-right: auto;
+}
+
+main {
+    padding: 0;
+    margin: 0; 
+}
+
+#presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../src/fondo.gif') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#titulo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 18%;
+    transform: translate(-20%, -20%);
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: #302c76;
+    animation: growAndMove 2s ease-in-out forwards; 
+}
+
+@keyframes growAndMove {
+    0% {
+        transform: translate(-50%, -100%) scale(0.2);
+    }
+    100% {
+        transform: translate(-50%, 0) scale(1);
+    }  
+}
+
+
+#descripcion {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+    font-size: 1.8vh;
+    color: #E8ECEE;
+    transform: translate(-50%, -50%);
+    animation: growAndMove2 4s ease-in-out forwards, glow 1s infinite; 
+}
+
+@keyframes growAndMove2 {
+    0% {
+        transform: translate(-50%, -100%) scale(0.0);
+    }
+    100% {
+        transform: translate(-50%, 0) scale(1);
+    }  
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #fff, 0 0 20px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+    }
+}
+
+
+
+
+.nave {
+    position: fixed;
+    transition: transform ease-in-out;
+}
+
+#nave1 {
+    left: 15%;
+    width: 3%;
+    bottom: -20%;
+}
+
+#nave2 {
+    left: 55%;
+    width: 5%;
+    bottom: -12%;
+}
+
+#nave3 {
+    left: 85%;
+    width: 4%;
+    bottom: -28%;
+}
+
+
+
+#juegos {
+background-color: black;
+}

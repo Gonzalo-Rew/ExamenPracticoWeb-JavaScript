@@ -1,18 +1,76 @@
-<!DOCTYPE html>
 <html lang="es">
-
     <head>
-        <title></title>
-        <link rel="stylesheet" href="">
-        <link rel="icon" href="" type="image/png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cafetería Jueguitos</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="src/logo.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="js/index.js"></script>
     </head>
-
-
     <body>
+        <header>
+            <nav>
+                <img id="logo" src="src/logo.png" alt="Logo">
+                <ul>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
         
 
-        
+            <div id="presentacion">
+                <img src="/src/titulo.png" id="titulo">
+                
 
+                <div id="descripcion">
+                    <p>
+                        Donde el aroma del café recién hecho se mezcla con 
+                        la nostalgia de los juegos retro de los años 80 y 90.
+                    </p>
+                </div>
+
+                
+            </div>
+            
+
+           
+
+            <section id="juegos">
+                <h2>¿A qué jugar en nuestra tienda?</h2>
+                <div class="juego">
+                    <img src="snake.png" alt="Snake">
+                    <p>Snake</p>
+                </div>
+                <div class="juego" >
+                    <img src="space_invaders.png" alt="Space Invaders">
+                    <p>Space Invaders</p>
+                </div>
+                <div class="juego" >
+                    <img src="otro.png" alt="Otro Juego">
+                    <p>Otro Juego</p>
+                </div>
+            </section>
+            <section id="comentarios">
+                <h2>Comentarios</h2>
+                <div id="comentarios-lista"></div>
+                <textarea id="comentario" placeholder="Escribe tu opinión..."></textarea>
+                <button onclick="enviarComentario()">Enviar</button>
+            </section>
+        
+            <div id="local">
+                <iframe id="mapa " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.3250229138866!2d-3.7520879250948154!3d40.37527675816305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418832fe8df625%3A0x492caf410bb703df!2sColegio%20Santa%20Mar%C3%ADa%20de%20los%20Ap%C3%B3stoles!5e1!3m2!1ses!2ses!4v1740675085010!5m2!1ses!2ses" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        <footer>
+            <p>&copy; 2025 Cafetería Jueguitos</p>
+        </footer>
+
+
+        <img src="src/nave.png" class="nave" id="nave1">
+        <img src="src/nave.png" class="nave" id="nave2">
+        <img src="src/nave.png" class="nave" id="nave3">
     </body>
-
 </html>
